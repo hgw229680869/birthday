@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+    * {
+          padding: 0;
+          margin: 0;
+          text-decoration: none;
+          list-style: none;
+      }  
+      body {
+        perspective: 1000px;
+		background:#FFB6C1
+      }
+     section {
+	   margin: 100px auto;
+       height:500px;
+       width: 500px;
+       background: url(1.jpg) no-repeat;
+	   background-size:500px;
+       position: relative;
+       border: 1px solid blue;
+     }
+     .l,.r {
+       height:100% ;
+       width: 50%;
+       background-color:#F4A460;
+       position: absolute;
+       transition: all .9s;
+     }
+     .l {
+       left: 0;
+       top: 0;
+       border-right: 1px solid red;
+       transform-origin: left;
+       
+     }
+     .r {
+       right: 0;
+       top: 0;
+       border-left: 1px solid red;
+       transform-origin: right;
+      
+       
+     }
+	 .z{margin:40% 0;
+       width:100%;
+	   font-size:30px;
+	   font-family:FangSong;
+	   }
+	   .s{
+	   margin:20% 0;
+	   font-size:30px;
+	   font-family:FangSong;
+	   }
+    section:hover .l{
+       
+      transform: rotateY(-180deg);
+     }
+     section:hover .r{
+      transform: rotateY(180deg);
+     }
+    </style>
+</head>
+<body>
+ <section>
+   <div class="l">
+	<table class="z">
+		<tr align=center valign=middle><td>打开这份</td></tr>
+	</table>
+	<table class="s" border=1 frame=void align=center>
+		<tr align=center valign=middle><td>确定</td></tr>
+	</table>
+   </div>
+   <div class="r">
+	<table class="z">
+		<tr align=center valign=middle><td>礼物</td></tr>
+	</table>
+	</div>
+ </section>
+ <meta http-equiv="refresh" content="2;url=Memories.html">
+</body>
+</html>
